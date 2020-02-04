@@ -1,8 +1,13 @@
 name: thing
-on: [pull_request_review_comment]
+
+on: 
+  pull_request_review_comment:
+    [created]
+
 jobs:
-  one:
+  testing_job:
     runs-on: ubuntu-latest
+
     steps:
     - name: Dump GitHub context
       env:
