@@ -8,13 +8,10 @@ name: thing
 # a comment on the PR in the last step.
 #
 # instead, we trigger this remotely via a bot we're running ourselves.
-on: pull_request_review_comment
-
+on: [pull_request_review_comment]
 jobs:
   one:
-
     runs-on: ubuntu-latest
-
     steps:
     - name: Dump GitHub context
         env:
