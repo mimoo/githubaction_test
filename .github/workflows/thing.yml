@@ -1,9 +1,7 @@
-name: thing
-
-on: 
+name: Thing
+on:
   pull_request_review_comment:
-    [created]
-
+    types: [created]
 jobs:
   testing_job:
     runs-on: ubuntu-latest
